@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+ <head>
+  <meta charset="UTF-8">
+  <title>サンプル</title>
+  <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript">
+   <!--
+   $(document).ready(function(){
+    //==============================
+    // イベントリスナー
+    //==============================
+    // マウスオーバーでカーソルを指にする
+    $(document).on({
+     'mouseenter': function(){
+      $(this).css("cursor","pointer"); // マウスカーソルを指にする
+     },
+     'mouseleave': function(){
+      $(this).css("cursor","default"); // マウスカーソルをデフォルトにする
+     }
+    }, '#unkoTable');
+   });
+   // -->
+  </script>
+ </head>
+ <body>
+  <p>アンドー</p>
+  <div id="contents">
+   <div id="hoge">
+    <h2>下記のテーブルにのっけるとマウスかわる。</h2>
+    <table id="unkoTable" border=1>
+     <thead>
+     </thead>
+     <tbody>
+      <tr>
+       <th>a</th>
+       <th>b</th>
+       <th>c</th>
+      </tr>
+      <tr>
+       <td>a1</td>
+       <td>b1</td>
+       <td>c1</td>
+      </tr>
+      <tr>
+       <td>a2</td>
+       <td>b2</td>
+       <td>c2</td>
+      </tr>
+     </tbody>
+    </table> 
+   </div>
+ </body>
+</html>
